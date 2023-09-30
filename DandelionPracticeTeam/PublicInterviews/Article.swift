@@ -21,7 +21,11 @@ struct ArticleDetailView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(spacing: 20) {
+                Text(article.title)
+                    .font(.title)
+                    .bold()
+                    .padding()
                 ScrollView {
                     Text(article.content)
                         .font(.body)
@@ -29,8 +33,6 @@ struct ArticleDetailView: View {
                 }
                     
             }
-            .padding()
-            .navigationTitle(article.title)
         }
     }
 }
