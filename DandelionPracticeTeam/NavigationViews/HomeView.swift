@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
         NavigationView{
             ZStack{

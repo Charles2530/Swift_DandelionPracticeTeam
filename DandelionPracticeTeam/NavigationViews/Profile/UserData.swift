@@ -10,8 +10,9 @@ import Combine
 
 class UserData: ObservableObject {
     @Published var isLogged = false
+    @Published var showAlert = true
     @Published var username = "未登录"
     @Published var password = ""
     @Published var description = "这里是个人描述"
-    @Published var avatar: Image = Image(systemName: "person.crop.circle")
+    @Published var avatar: String = "person.crop.circle"
 }

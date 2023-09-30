@@ -10,7 +10,7 @@
 		564F8B8A2AC79A8A004C02CE /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B892AC79A8A004C02CE /* PageData.swift */; };
 		564F8B902AC79E89004C02CE /* SectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B8F2AC79E89004C02CE /* SectionData.swift */; };
 		564F8B922AC7A473004C02CE /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B912AC7A473004C02CE /* ButtonData.swift */; };
-		564F8B962AC7AAD1004C02CE /* ImageAndDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B952AC7AAD1004C02CE /* ImageAndDescriptionController.swift */; };
+		564F8B962AC7AAD1004C02CE /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B952AC7AAD1004C02CE /* DatabaseController.swift */; };
 		564F8B992AC7F066004C02CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B982AC7F066004C02CE /* HomeView.swift */; };
 		564F8B9B2AC7F09D004C02CE /* TeamInfoModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B9A2AC7F09D004C02CE /* TeamInfoModalView.swift */; };
 		564F8B9D2AC7F0E6004C02CE /* ProfileModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8B9C2AC7F0E6004C02CE /* ProfileModalView.swift */; };
@@ -18,6 +18,8 @@
 		564F8BA22AC7FCF7004C02CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA12AC7FCF7004C02CE /* LoginView.swift */; };
 		564F8BA42AC7FD1A004C02CE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA32AC7FD1A004C02CE /* RegisterView.swift */; };
 		564F8BA62AC7FDB8004C02CE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA52AC7FDB8004C02CE /* UserData.swift */; };
+		564F8BA82AC83A75004C02CE /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA72AC83A75004C02CE /* ProfileEditView.swift */; };
+		564F8BAA2AC83F87004C02CE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA92AC83F87004C02CE /* FavoritesView.swift */; };
 		56619E632AC6CA9E007FBB45 /* DandelionPracticeTeamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56619E622AC6CA9E007FBB45 /* DandelionPracticeTeamApp.swift */; };
 		56619E652AC6CA9E007FBB45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56619E642AC6CA9E007FBB45 /* ContentView.swift */; };
 		56619E672AC6CAA0007FBB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56619E662AC6CAA0007FBB45 /* Assets.xcassets */; };
@@ -35,7 +37,7 @@
 		564F8B892AC79A8A004C02CE /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		564F8B8F2AC79E89004C02CE /* SectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionData.swift; sourceTree = "<group>"; };
 		564F8B912AC7A473004C02CE /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
-		564F8B952AC7AAD1004C02CE /* ImageAndDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndDescriptionController.swift; sourceTree = "<group>"; };
+		564F8B952AC7AAD1004C02CE /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		564F8B982AC7F066004C02CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		564F8B9A2AC7F09D004C02CE /* TeamInfoModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoModalView.swift; sourceTree = "<group>"; };
 		564F8B9C2AC7F0E6004C02CE /* ProfileModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		564F8BA12AC7FCF7004C02CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		564F8BA32AC7FD1A004C02CE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		564F8BA52AC7FDB8004C02CE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		564F8BA72AC83A75004C02CE /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		564F8BA92AC83F87004C02CE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		56619E5F2AC6CA9E007FBB45 /* DandelionPracticeTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DandelionPracticeTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56619E622AC6CA9E007FBB45 /* DandelionPracticeTeamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DandelionPracticeTeamApp.swift; sourceTree = "<group>"; };
 		56619E642AC6CA9E007FBB45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,7 +79,6 @@
 				564F8B892AC79A8A004C02CE /* PageData.swift */,
 				564F8B8F2AC79E89004C02CE /* SectionData.swift */,
 				564F8B912AC7A473004C02CE /* ButtonData.swift */,
-				564F8B952AC7AAD1004C02CE /* ImageAndDescriptionController.swift */,
 			);
 			path = CountyFeaturesView;
 			sourceTree = "<group>";
@@ -125,6 +128,9 @@
 				564F8BA12AC7FCF7004C02CE /* LoginView.swift */,
 				564F8BA32AC7FD1A004C02CE /* RegisterView.swift */,
 				564F8BA52AC7FDB8004C02CE /* UserData.swift */,
+				564F8B952AC7AAD1004C02CE /* DatabaseController.swift */,
+				564F8BA72AC83A75004C02CE /* ProfileEditView.swift */,
+				564F8BA92AC83F87004C02CE /* FavoritesView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -243,7 +249,7 @@
 				56C6B1B62AC70BBC00FAA51F /* Article.swift in Sources */,
 				564F8B992AC7F066004C02CE /* HomeView.swift in Sources */,
 				564F8B9F2AC7F2D9004C02CE /* ImageViewer.swift in Sources */,
-				564F8B962AC7AAD1004C02CE /* ImageAndDescriptionController.swift in Sources */,
+				564F8B962AC7AAD1004C02CE /* DatabaseController.swift in Sources */,
 				56C6B1AE2AC700F200FAA51F /* PublicInterviews.swift in Sources */,
 				564F8B902AC79E89004C02CE /* SectionData.swift in Sources */,
 				564F8B8A2AC79A8A004C02CE /* PageData.swift in Sources */,
@@ -255,6 +261,8 @@
 				564F8BA22AC7FCF7004C02CE /* LoginView.swift in Sources */,
 				56C6B1BA2AC7230800FAA51F /* WeChatArt.swift in Sources */,
 				56619E632AC6CA9E007FBB45 /* DandelionPracticeTeamApp.swift in Sources */,
+				564F8BAA2AC83F87004C02CE /* FavoritesView.swift in Sources */,
+				564F8BA82AC83A75004C02CE /* ProfileEditView.swift in Sources */,
 				56C6B1B22AC7045E00FAA51F /* Dandelions.swift in Sources */,
 				56C6B1B02AC7041900FAA51F /* CountyFeaturesView.swift in Sources */,
 				564F8BA62AC7FDB8004C02CE /* UserData.swift in Sources */,

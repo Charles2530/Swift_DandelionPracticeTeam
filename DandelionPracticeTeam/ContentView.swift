@@ -7,7 +7,10 @@
 
 import SwiftUI
 struct ContentView: View {
+    @EnvironmentObject var userData: UserData
+    
     @State private var showImageModal = false
+    
     var body: some View {
         TabView {
             HomeView().tabItem {
@@ -44,11 +47,17 @@ struct ContentView: View {
             ProfileModalView().tabItem {
                 Label("我的", systemImage: "person.circle").background(Color.black.opacity(0.8)).cornerRadius(8)
             }
-            .environmentObject(UserData())
         }.background(Color.black)
+//        .alert(isPresented: $userData.showAlert) {
+//            Alert(title: Text("未登录"),
+//                  message: Text("登陆后可以点赞，评论和收藏哦！！！快去登陆吧"),
+//                  dismissButton: .default(Text("确定")) {
+//                        
+//                  })
+//        }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().environmentObject(UserData())
 }

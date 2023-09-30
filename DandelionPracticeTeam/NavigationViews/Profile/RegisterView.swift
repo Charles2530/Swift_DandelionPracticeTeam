@@ -25,11 +25,35 @@ struct RegisterView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             Button("注册") {
-                // 在真实的应用中，您应该保存和验证这些凭据
+                if inputUsername == "" || inputPassword == "" || inputDescription == ""{
+                    userData.showAlert = true
+                    return
+                }
+                if DataTable[inputUsername] != nil{
+                    userData.showAlert = true
+                    return
+                }
                 userData.username = inputUsername
                 userData.password = inputPassword
                 userData.description = inputDescription
                 userData.isLogged = true
+                userData.showAlert = false
+                DataTable[inputUsername] = User(isLogged: true, showAlert: false, username: inputUsername, password: inputPassword, description: inputDescription)
+            }
+            .alert(isPresented: $userData.showAlert) {
+                if inputUsername == "" || inputPassword == "" || inputDescription == ""{
+                    Alert(title: Text("密码为空"),
+                                 message: Text("注册信息不能为空"),
+                                 dismissButton: .default(Text("确定")))
+                } else if DataTable[inputUsername] != nil {
+                    Alert(title: Text("用户名已存在"),
+                                 message: Text("请更换用户名"),
+                                 dismissButton: .default(Text("确定")))
+                }else {
+                    Alert(title: Text("系统异常"),
+                                 message: Text("请稍后再试"),
+                                 dismissButton: .default(Text("确定")))
+                }
             }
             .padding()
         }

@@ -17,7 +17,6 @@ struct ButtonData {
         self.title = title
         self.imageBinding = imageBinding
         self.descriptionBinding = descriptionBinding
-        imageAndDescriptionTable[title] = ImageAndDescription(imageName: imageBinding, description: descriptionBinding)
     }
 }
 
