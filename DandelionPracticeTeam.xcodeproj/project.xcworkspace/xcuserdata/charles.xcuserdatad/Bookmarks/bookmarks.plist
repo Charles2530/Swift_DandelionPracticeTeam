@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>52</string>
+					<key>EndingLineNumber</key>
+					<string>16</string>
+					<key>StartingColumnNumber</key>
+					<string>39</string>
+					<key>StartingLineNumber</key>
+					<string>16</string>
+					<key>Timestamp</key>
+					<string>717733958.6525019</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>DandelionPracticeTeam/CountyFeaturesView/CountyFeaturesView.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>: </string>
+				<key>leading</key>
+				<string>    ButtonData(title: "中阳黑木耳", imageBinding: "HeiMuEr", descriptionBinding: "作为中阳木耳产业的新兴龙头企业，心言生物科技有限公司在政府的强力支持下，最新建设的木耳生产线已于去年投产，该公司同时经营一-亿年产量的菌棒生产以及1000栋规模的大棚种植，利用自动化的生产设备实现高效生产，同时着眼于全产业链的木耳深加工并注重鱼菜共生的水资源循环利用。希望中阳的木耳产业在政府的扶持下，在心言公司的带领下继续茁壮成长，快速发展。"),
+    ButtonData(title: "中钢", imageBinding: "ZhongGang", descriptionBinding: "山西中阳钢铁有限公司，坐落于中阳县城北部，始建于1985年，如今已发展成为中阳的第一大企业年产值150亿元，拥有职工上万名，集采煤、选煤、采矿、选矿、炼铁、炼钢、轧钢、发电于一体，具有庞大的产业规模，广区内食堂、桥舍等生活设施也一应俱全，具有明显的20世纪大型企业的社会化特征，突出体现了以人为本的企业特色。近年来，中钢与北航进行深度技术合作，研究出了以Q195为代表的一系列高技术钢铁产品。"),
+    ButtonData(title: "醋", imageBinding</string>
+				<key>trailing</key>
+				<string>"Cu", descriptionBinding: "柏洼古井手工醋庄坐落于泊洼山脚下，董事长王先生传承家族的古法手艺，在酿醋领域已经深耕了三十多年，通过使用小麦、柏叶松针等不同的原料，开发了松针酷、柏叶醋高粱醋等高端保健醋、养生醋等不同的商品类型，带领柏洼手工醋走上多元化、高端化、高附加值的发展道路。"),
+    ButtonData(title: "孵化园", imageBinding: "FuHuaYuan", descriptionBinding: "吕梁市北航中汇科技孵化器，为北航与当地政府合作召集、培养新兴产业的基地，内含硕为思集团、华艺民俗文化发展有限公司、山西辰宇服装有限公司等新兴产业公司，分别代表了在传统重工业以外的网络技术、传统文化、轻工业，为中阳县的多元化发展与产业转型提供了道路指引，为这个曾经的贫困县带来了发展潜力与生产活力。")
+]
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>52</string>
+					<key>EndingLineNumber</key>
+					<string>16</string>
+					<key>StartingColumnNumber</key>
+					<string>39</string>
+					<key>StartingLineNumber</key>
+					<string>16</string>
+					<key>Timestamp</key>
+					<string>717733961.661769</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>DandelionPracticeTeam/CountyFeaturesView/CountyFeaturesView.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>: </string>
+				<key>leading</key>
+				<string>    ButtonData(title: "中阳黑木耳", imageBinding: "HeiMuEr", descriptionBinding: "作为中阳木耳产业的新兴龙头企业，心言生物科技有限公司在政府的强力支持下，最新建设的木耳生产线已于去年投产，该公司同时经营一-亿年产量的菌棒生产以及1000栋规模的大棚种植，利用自动化的生产设备实现高效生产，同时着眼于全产业链的木耳深加工并注重鱼菜共生的水资源循环利用。希望中阳的木耳产业在政府的扶持下，在心言公司的带领下继续茁壮成长，快速发展。"),
+    ButtonData(title: "中钢", imageBinding: "ZhongGang", descriptionBinding: "山西中阳钢铁有限公司，坐落于中阳县城北部，始建于1985年，如今已发展成为中阳的第一大企业年产值150亿元，拥有职工上万名，集采煤、选煤、采矿、选矿、炼铁、炼钢、轧钢、发电于一体，具有庞大的产业规模，广区内食堂、桥舍等生活设施也一应俱全，具有明显的20世纪大型企业的社会化特征，突出体现了以人为本的企业特色。近年来，中钢与北航进行深度技术合作，研究出了以Q195为代表的一系列高技术钢铁产品。"),
+    ButtonData(title: "醋", imageBinding</string>
+				<key>trailing</key>
+				<string>"Cu", descriptionBinding: "柏洼古井手工醋庄坐落于泊洼山脚下，董事长王先生传承家族的古法手艺，在酿醋领域已经深耕了三十多年，通过使用小麦、柏叶松针等不同的原料，开发了松针酷、柏叶醋高粱醋等高端保健醋、养生醋等不同的商品类型，带领柏洼手工醋走上多元化、高端化、高附加值的发展道路。"),
+    ButtonData(title: "孵化园", imageBinding: "FuHuaYuan", descriptionBinding: "吕梁市北航中汇科技孵化器，为北航与当地政府合作召集、培养新兴产业的基地，内含硕为思集团、华艺民俗文化发展有限公司、山西辰宇服装有限公司等新兴产业公司，分别代表了在传统重工业以外的网络技术、传统文化、轻工业，为中阳县的多元化发展与产业转型提供了道路指引，为这个曾经的贫困县带来了发展潜力与生产活力。")
+]
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
