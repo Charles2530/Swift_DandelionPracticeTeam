@@ -24,7 +24,7 @@ struct Dandelions:View{
 }
 
 struct MemberListView: View {
-    let members: [Member] = [
+    @State private var members: [Member] = [
         .init(name: "高世骏", avatar: "GaoShiJun",introduction: "来自北京的高世骏，喜欢打游戏"),
         .init(name: "杜金阳", avatar: "DuJinYang",introduction: "热爱生活，元气满满的阳光小子"),
         .init(name: "黄钰", avatar: "HuangYu",introduction: "大家好，我是计算机学院2021级的黄钰，很高兴可以成为实践队的一员，和大家一起为乡村振兴做贡献。"),

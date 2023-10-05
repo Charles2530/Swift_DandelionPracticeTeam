@@ -10,10 +10,17 @@ import SwiftUI
 struct ProfileEditView: View {
     @EnvironmentObject var userData: UserData
 
-    @State private var editingUsername: String = ""
-    @State private var editingPassword: String = ""
-    @State private var editingDescription: String = ""
+    @State private var editingUsername: String
+    @State private var editingPassword: String
+    @State private var editingDescription: String
 
+    
+    init(userData: UserData) {
+        _editingUsername = State(initialValue: userData.username)
+        _editingPassword = State(initialValue: userData.password)
+        _editingDescription = State(initialValue: userData.description)
+    }
+    
     var body: some View {
         VStack(spacing: 20) {
             HStack {
@@ -30,29 +37,14 @@ struct ProfileEditView: View {
             }
 
             TextField("用户名", text: $editingUsername)
-                .onTapGesture {
-                    if editingUsername.isEmpty {
-                        editingUsername = userData.username
-                    }
-                }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
 
             SecureField("密码", text: $editingPassword)
-                .onTapGesture {
-                    if editingPassword.isEmpty {
-                        editingPassword = userData.password
-                    }
-                }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
 
             TextField("个人描述", text: $editingDescription)
-                .onTapGesture {
-                    if editingDescription.isEmpty {
-                        editingDescription = userData.description
-                    }
-                }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
 

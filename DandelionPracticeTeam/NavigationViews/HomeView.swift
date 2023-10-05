@@ -32,6 +32,7 @@ struct HomeView: View {
                             .fontWeight(.medium)
                             .italic()
                             .shadow(color: .black, radius: 1, x: 0, y: 2)
+                        Text("——6系官方实践队")
                         NavigationLink(destination: CountyFeaturesView()) {
                             Text("县城特色")
                                 .foregroundColor(.white)

@@ -10,13 +10,21 @@ import SwiftUI
 struct FavoritesView: View {
     // Assuming you have an array of strings as your favorites for simplicity.
     // This can be any custom data model.
-    @State private var favorites = ["Item 1", "Item 2", "Item 3", "Item 4"]
+    @EnvironmentObject var userData: UserData
+    
+    var favorites: [WeChatArt] {
+         userData.favorites
+    }
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(favorites, id: \.self) { item in
-                    Text(item)
+                    Button(action: {
+                        openURL(item.url)
+                    }) {
+                        Text(item.title)
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
@@ -26,9 +34,13 @@ struct FavoritesView: View {
             }
         }
     }
+    
+    private func openURL(_ url: URL) {
+        UIApplication.shared.open(url)
+    }
 
     func removeItems(at offsets: IndexSet) {
-        favorites.remove(atOffsets: offsets)
+        userData.favorites.remove(atOffsets: offsets)
     }
 }
 

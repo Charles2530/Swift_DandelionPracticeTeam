@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var userData: UserData
     
-    @State private var showImageModal = false
+    @State private var showImageModal = true
     
     var body: some View {
         TabView {
@@ -48,13 +48,6 @@ struct ContentView: View {
                 Label("我的", systemImage: "person.circle").background(Color.black.opacity(0.8)).cornerRadius(8)
             }
         }.background(Color.black)
-//        .alert(isPresented: $userData.showAlert) {
-//            Alert(title: Text("未登录"),
-//                  message: Text("登陆后可以点赞，评论和收藏哦！！！快去登陆吧"),
-//                  dismissButton: .default(Text("确定")) {
-//                        
-//                  })
-//        }
     }
 }
 

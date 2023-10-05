@@ -12,14 +12,18 @@ struct User {
     var username: String
     var password: String
     var description: String
-    var avatar: Avatar
-    init(isLogged: Bool = false, showAlert: Bool = true, username: String = "未登录", password: String = "", description: String = "这里是个人描述", avatar: Avatar = Avatar(id: 1,systemName: "person.crop.circle")) {
+    var avatar: String
+    var favorites: [WeChatArt]
+    var likedArticles: [String]
+    init(isLogged: Bool = false, showAlert: Bool = true, username: String = "未登录", password: String = "", description: String = "这里是个人描述", avatar: String = "person.crop.circle",favorites: [WeChatArt] = [],likedArticles: [String] = []) {
         self.isLogged = isLogged
         self.showAlert = showAlert
         self.username = username
         self.password = password
         self.description = description
         self.avatar = avatar
+        self.favorites = favorites
+        self.likedArticles = likedArticles
     }
 }
 

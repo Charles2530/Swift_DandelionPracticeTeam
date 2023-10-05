@@ -15,4 +15,6 @@ class UserData: ObservableObject {
     @Published var password = ""
     @Published var description = "这里是个人描述"
     @Published var avatar: String = "person.crop.circle"
+    @Published var favorites: [WeChatArt] = []
+    @Published var likedArticles: [String] = []
 }

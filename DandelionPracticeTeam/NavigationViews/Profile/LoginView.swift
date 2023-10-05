@@ -35,6 +35,10 @@ struct LoginView: View {
                         userData.password = inputPassword
                         userData.isLogged = true
                         userData.showAlert = false
+                        userData.avatar = DataTable[inputUsername]?.avatar ?? "person.circle"
+                        userData.description = DataTable[inputUsername]?.description ?? "这里是个人描述"
+                        userData.favorites = DataTable[inputUsername]?.favorites ?? []
+                        userData.likedArticles = DataTable[inputUsername]?.likedArticles ?? []
                     }
                     else{
                         userData.showAlert = true

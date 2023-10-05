@@ -18,9 +18,9 @@ struct ProfileModalView: View {
                         Image(systemName: userData.avatar)
                             .resizable()
                             .frame(width: 100, height: 100)
-                        
-                        Text(userData.username)
-                        NavigationLink(destination: ProfileEditView()) {
+                        Text("用户名：\(userData.username)")
+                        Text("个人描述：\(userData.description)")
+                        NavigationLink(destination: ProfileEditView(userData: userData)) {
                             Text("编辑个人资料")
                         }
                         .padding()
@@ -28,11 +28,7 @@ struct ProfileModalView: View {
                             Text("我的收藏")
                         }
                         Button("退出登录") {
-                            userData.isLogged = false
-                            userData.username = "未登录"
-                            userData.password = ""
-                            userData.description = "这里是个人描述"
-                            userData.showAlert = true
+                            logout()
                         }
                         .padding()
                     }
@@ -45,6 +41,23 @@ struct ProfileModalView: View {
             .padding()
             .navigationTitle("我的")
         }
+    }
+    
+    private func logout(){
+        DataTable[userData.username] = User(
+            password: userData.password,
+            description: userData.description,
+            avatar: userData.avatar,
+            favorites: userData.favorites,
+            likedArticles: userData.likedArticles)
+        userData.isLogged = false
+        userData.username = "未登录"
+        userData.password = ""
+        userData.description = "这里是个人描述"
+        userData.showAlert = true
+        userData.avatar = "person.circle"
+        userData.favorites = []
+        userData.likedArticles = []
     }
 }
 
