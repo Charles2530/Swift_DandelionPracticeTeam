@@ -12,15 +12,17 @@ struct GridView: View {
     @Binding var selectedImage: String?
 
     var body: some View {
+        let gridWidth = (UIScreen.main.bounds.width - 60) / 2
+        
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: [GridItem(), GridItem()], spacing: 10) {
+                LazyVGrid(columns: [GridItem(), GridItem()], spacing: 20) {
                     ForEach(images, id: \.self) { imageName in
                         NavigationLink(destination: ZoomImageView(imageName: imageName)){
                             Image(imageName)
                                 .resizable()
                                 .scaledToFill()
-                                .frame(height: 200)
+                                .frame(width: gridWidth,height: 200)
                                 .clipped()
                                 .cornerRadius(10)
                         }

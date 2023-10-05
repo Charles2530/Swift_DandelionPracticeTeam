@@ -44,10 +44,10 @@ let sectionsData4 = [
 
 struct CountyFeaturesView:View{
     let pagesData = [
-        PageData(id: 0, imageName: "ZhongYangFromSky", description: "中阳县",sectionData: sectionsData1),
-        PageData(id: 1, imageName: "HeiMuEr", description: "产业",sectionData: sectionsData2),
-        PageData(id: 2, imageName: "HeiMuEr", description: "文化",sectionData: sectionsData3),
-        PageData(id: 3, imageName: "HeiMuEr", description: "历史印记",sectionData: sectionsData4)
+        PageData(id: 0, imageName: "YaoDong", description: "中阳县",sectionData: sectionsData1),
+        PageData(id: 1, imageName: "ZhongYangFromSky", description: "产业",sectionData: sectionsData2),
+        PageData(id: 2, imageName: "YiFengYiSu", description: "文化",sectionData: sectionsData3),
+        PageData(id: 3, imageName: "ZhongGang", description: "历史印记",sectionData: sectionsData4)
     ]
     
     var body:some View{

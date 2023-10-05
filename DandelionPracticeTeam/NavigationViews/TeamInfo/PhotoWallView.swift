@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PhotoWallView: View {
     // 图片名称的数组（从Assets获取）
-    @State private var images = ["TeamLogo","LvLiangTeam"] // 更改为您的图片名称
+    @State private var images = ["LvLiangTeam","Wall1","Wall2","Wall3",
+                                 "Wall4","Wall5","Wall6","Wall7","Wall8","Wall9",
+                                 "Wall10","Wall11","Wall12","Wall13"]
 
     @State private var selectedImage: String? = nil
 

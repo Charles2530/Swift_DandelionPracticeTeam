@@ -25,14 +25,11 @@ struct PageViewContentView:View{
             VStack{
                 Text(page.description)
                     .font(.largeTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(.orange)
+                    .bold()
                     .padding()
-                    .background(
-                        Color.gray.opacity(0.7).blur(radius: 5)
-                    )
-                    .cornerRadius(10)
-                    .padding()
-                
+                    .italic()
+                    .shadow(color: .black, radius: 1, x: 0, y: 2)
                 ForEach(page.sectionData) { section in
                     SectionDataView(section: section)
                 }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
