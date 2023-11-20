@@ -39,6 +39,7 @@ struct RegisterView: View {
                 userData.isLogged = true
                 userData.showAlert = false
                 DataTable[inputUsername] = User(isLogged: true, showAlert: false, username: inputUsername, password: inputPassword, description: inputDescription)
+                User.saveUsers(users: DataTable.values.map{$0})
             }
             .alert(isPresented: $userData.showAlert) {
                 if inputUsername == "" || inputPassword == "" || inputDescription == ""{

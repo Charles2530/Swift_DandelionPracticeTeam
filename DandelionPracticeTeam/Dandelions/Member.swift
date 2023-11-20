@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class Member: Decodable {
+class Member: Decodable,Encodable {
     var name: String
     var avatar: String
     var introduction: String
@@ -27,13 +27,28 @@ class Member: Decodable {
         do {
             let decoder = JSONDecoder()
             // Custom decoder for URL since your JSON contains URL as String
-            
-            
-            let articles = try decoder.decode([Member].self, from: data)
-            return articles
+            let members = try decoder.decode([Member].self, from: data)
+            return members
         } catch {
             print("Error decoding JSON: \(error)")
             return []
+        }
+    }
+    
+    static func saveMembers(members:[Member]){
+        let encoder=JSONEncoder()
+        if let encoded = try? encoder.encode(members) {
+            if let jsonString = String(data: encoded, encoding: .utf8) {
+                if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                    let fileURL = documentsDirectory.appendingPathComponent("Members.json")
+                    do {
+                        try jsonString.write(to: fileURL, atomically: true, encoding: .utf8)
+                        print("Data saved to \(fileURL)")
+                    } catch {
+                        print("Error saving data to file: \(error)")
+                    }
+                }
+            }
         }
     }
 }

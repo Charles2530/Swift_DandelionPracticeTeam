@@ -50,6 +50,7 @@ struct ProfileModalView: View {
             avatar: userData.avatar,
             favorites: userData.favorites,
             likedArticles: userData.likedArticles)
+        User.saveUsers(users: DataTable.values.map{$0})
         userData.isLogged = false
         userData.username = "未登录"
         userData.password = ""

@@ -52,6 +52,8 @@ struct ProfileEditView: View {
                 userData.username = editingUsername
                 userData.password = editingPassword
                 userData.description = editingDescription
+                DataTable[userData.username] = User(isLogged: true, showAlert: false, username: userData.username, password: userData.password, description: userData.description, avatar: userData.avatar)
+                User.saveUsers(users: DataTable.values.map{$0})
             }
             .padding()
             .background(Color.blue)

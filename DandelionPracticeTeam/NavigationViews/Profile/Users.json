@@ -1,13 +1,1 @@
-[
-    {
-        "isLogged": true, 
-        "showAlert": false,
-        "username": "Admin",
-        "password": "123456", 
-        "description": "this is admin user", 
-        "avatar": "person.crop.circle",
-        "favorites": [],
-        "likedArticles": []
-    },
-]
-
+[{"username":"未登录","description":"this is admin user","avatar":"person.crop.circle","password":"123456","showAlert":true,"isLogged":false,"favorites":[{"summary":"一键开启实践之旅.","title":"筑梦中阳 | Day.1 一键开启实践之旅","likes":0,"url":"https:\/\/mp.weixin.qq.com\/s\/F9zdgAxE3Hxj6EFCGpvkNA?poc_token=HJLsFmWjOAs1ywWv2PzJUz-TWh9A2J7lccWOZfIm","isFavorite":true}],"likedArticles":["扬帆起航 | 蒲公英乡野航迹实践队简介"]}]

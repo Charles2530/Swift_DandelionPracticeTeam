@@ -58,12 +58,13 @@ struct TitleTattle:View{
     }
     
     private func favoriteChanged(_ article: WeChatArt) {
-        //print("\(article.title) is now \(article.isFavorite ? "favorite" : "not favorite")")
         if let index = userData.favorites.firstIndex(of: article) {
             userData.favorites.remove(at: index)
         } else {
             userData.favorites.append(article)
         }
+        DataTable[userData.username] = User(isLogged: true, showAlert: false, username: userData.username, password: userData.password, description: userData.description, favorites: userData.favorites, likedArticles: userData.likedArticles)
+        User.saveUsers(users: DataTable.values.map{$0})
     }
     
     private func likeArticle(_ article: WeChatArt) {
@@ -76,6 +77,8 @@ struct TitleTattle:View{
                 userData.likedArticles.remove(at: index)
             }
         }
+        DataTable[userData.username] = User(isLogged: true, showAlert: false, username: userData.username, password: userData.password, description: userData.description, favorites: userData.favorites, likedArticles: userData.likedArticles)
+        User.saveUsers(users: DataTable.values.map{$0})
     }
 }
 

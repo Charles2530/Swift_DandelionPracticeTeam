@@ -86,13 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		562285E12B0AEB5B00F447CA /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		564F8B8B2AC79DEA004C02CE /* CountyFeaturesView */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +183,6 @@
 		56619E612AC6CA9E007FBB45 /* DandelionPracticeTeam */ = {
 			isa = PBXGroup;
 			children = (
-				562285E12B0AEB5B00F447CA /* Data */,
 				564F8B972AC7F04C004C02CE /* NavigationViews */,
 				564F8B8B2AC79DEA004C02CE /* CountyFeaturesView */,
 				564F8B8C2AC79E0E004C02CE /* PublicInterviews */,

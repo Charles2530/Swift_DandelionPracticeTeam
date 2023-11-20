@@ -94,8 +94,8 @@
             filePath = "DandelionPracticeTeam/TitleTattle/WeChatArt.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "loadWeChatArts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -198,7 +198,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0BD2BDE8-437D-46F3-B1A9-5CFE3D0CA262"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DandelionPracticeTeam/NavigationViews/Profile/LoginView.swift"
@@ -230,48 +230,112 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "AFAC2D40-3A9D-4EE3-AAF4-463671C272E2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "loadUserData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEFAC9EA-BD34-40FE-AC93-B0870D57DDA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "saveUsers(users:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22E6D8BA-5903-460E-8AED-10DDC9F27CE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "saveUsers(users:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "AFAC2D40-3A9D-4EE3-AAF4-463671C272E2 - d91cab315551bf1c"
+                  uuid = "22E6D8BA-5903-460E-8AED-10DDC9F27CE4 - ad7fd33dee80e388"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static DandelionPracticeTeam.User.loadUserData() -&gt; Swift.Array&lt;DandelionPracticeTeam.User&gt;"
+                  symbolName = "static DandelionPracticeTeam.User.saveUsers(users: Swift.Array&lt;DandelionPracticeTeam.User&gt;) -&gt; ()"
                   moduleName = "DandelionPracticeTeam"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "317">
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "342">
                </Location>
                <Location
-                  uuid = "AFAC2D40-3A9D-4EE3-AAF4-463671C272E2 - d91cab315551bf1c"
+                  uuid = "22E6D8BA-5903-460E-8AED-10DDC9F27CE4 - ad7fd33dee80e388"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static DandelionPracticeTeam.User.loadUserData() -&gt; Swift.Array&lt;DandelionPracticeTeam.User&gt;"
+                  symbolName = "static DandelionPracticeTeam.User.saveUsers(users: Swift.Array&lt;DandelionPracticeTeam.User&gt;) -&gt; ()"
                   moduleName = "DandelionPracticeTeam"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "200">
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "267">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C3170D1-4E27-4972-9B71-EB8E2FF3B39D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/TitleTattle/TitleTattle.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "favoriteChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26ACFBF6-538C-4450-93AA-75F0557A874B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/TitleTattle/TitleTattle.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "likeArticle(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
