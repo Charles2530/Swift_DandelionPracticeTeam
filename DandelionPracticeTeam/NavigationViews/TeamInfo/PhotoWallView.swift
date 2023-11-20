@@ -22,3 +22,12 @@ struct PhotoWallView: View {
         }
     }
 }
+
+#if DEBUG
+struct PhotoWallView_Previews: PreviewProvider {
+    static var previews: some View {
+        PhotoWallView()
+    }
+}
+#endif
+

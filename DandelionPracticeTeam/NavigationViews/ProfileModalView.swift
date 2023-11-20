@@ -61,3 +61,12 @@ struct ProfileModalView: View {
     }
 }
 
+#if DEBUG
+struct ProfileModalView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileModalView()
+            .environmentObject(UserData())
+    }
+}
+#endif
+

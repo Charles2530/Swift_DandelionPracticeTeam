@@ -59,3 +59,12 @@ struct RegisterView: View {
         }
     }
 }
+
+#if DEBUG
+struct RegisterView_Previews: PreviewProvider {
+    static var previews: some View {
+        RegisterView()
+    }
+}
+#endif
+

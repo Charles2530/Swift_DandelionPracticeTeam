@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct User {
+class User:Decodable {
     var isLogged: Bool
     var showAlert: Bool
     var username: String
@@ -25,6 +25,22 @@ struct User {
         self.favorites = favorites
         self.likedArticles = likedArticles
     }
+    static func loadUserData()->[User]{
+        guard let url = Bundle.main.url(forResource: "Users.json", withExtension: nil),
+              let data = try? Data(contentsOf: url) else {
+            return []
+        }
+
+        do {
+            let decoder = JSONDecoder()
+
+            let users = try decoder.decode([User].self, from: data)
+            return users
+        } catch {
+            print("Error decoding JSON: \(error)")
+            return []
+        }
+    }
 }
 
 struct Avatar: Identifiable {
@@ -33,4 +49,6 @@ struct Avatar: Identifiable {
 }
 
 var DataTable: [String: User] = [:]
+
+
 

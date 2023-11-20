@@ -16,4 +16,11 @@ struct ImageViewer: View {
 }
 
 
+#if DEBUG
+struct ImageViewer_Previews: PreviewProvider {
+    static var previews: some View {
+        ImageViewer()
+    }
+}
+#endif
 

@@ -6,10 +6,34 @@
 //
 
 import SwiftUI
-struct Article: Identifiable {
+class Article: Identifiable,Decodable {
     var id: Int
     var title: String
     var content: String
+    
+    init(id: Int, title: String, content: String) {
+        self.id = id
+        self.title = title
+        self.content = content
+    }
+    
+    static func loadArticles() -> [Article] {
+        guard let url = Bundle.main.url(forResource: "Articles.json", withExtension: nil) , let data = try? Data(contentsOf: url) else {
+            return []
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            // Custom decoder for URL since your JSON contains URL as String
+            
+            
+            let articles = try decoder.decode([Article].self, from: data)
+            return articles
+        } catch {
+            print("Error decoding JSON: \(error)")
+            return []
+        }
+    }
 }
 
 struct ArticleDetailView: View {

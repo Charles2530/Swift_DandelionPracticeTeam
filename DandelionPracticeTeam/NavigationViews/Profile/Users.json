@@ -1,0 +1,13 @@
+[
+    {
+        "isLogged": true, 
+        "showAlert": false,
+        "username": "Admin",
+        "password": "123456", 
+        "description": "this is admin user", 
+        "avatar": "person.crop.circle",
+        "favorites": [],
+        "likedArticles": []
+    },
+]
+

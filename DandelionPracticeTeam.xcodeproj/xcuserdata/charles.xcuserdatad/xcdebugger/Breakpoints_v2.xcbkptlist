@@ -56,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4106D452-0D98-476D-B6A4-0AA3640F5C1C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DandelionPracticeTeam/NavigationViews/Profile/LoginView.swift"
@@ -66,6 +66,212 @@
             endingLineNumber = "19"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "374A2135-8238-4712-8DC5-29B07233FCD8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/NavigationViews/TeamInfo/ZoomImageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8E273C9-FD84-4A35-97A3-4B1EE8ECC03F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/TitleTattle/WeChatArt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "loadWeChatArts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A520E32-545D-4499-BBB6-C615C170B333"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/Dandelions/Dandelions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "MemberListView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C2A0FD7-D7D7-4A94-8133-CC65B19FE7CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/Dandelions/Member.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "loadMembers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C2A0FD7-D7D7-4A94-8133-CC65B19FE7CD - 686b133a696df306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DandelionPracticeTeam.Member.loadMembers() -&gt; Swift.Array&lt;DandelionPracticeTeam.Member&gt;"
+                  moduleName = "DandelionPracticeTeam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/Dandelions/Member.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "317">
+               </Location>
+               <Location
+                  uuid = "5C2A0FD7-D7D7-4A94-8133-CC65B19FE7CD - 686b133a696df306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DandelionPracticeTeam.Member.loadMembers() -&gt; Swift.Array&lt;DandelionPracticeTeam.Member&gt;"
+                  moduleName = "DandelionPracticeTeam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/Dandelions/Member.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "747">
+               </Location>
+               <Location
+                  uuid = "5C2A0FD7-D7D7-4A94-8133-CC65B19FE7CD - 686b133a696df306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DandelionPracticeTeam.Member.loadMembers() -&gt; Swift.Array&lt;DandelionPracticeTeam.Member&gt;"
+                  moduleName = "DandelionPracticeTeam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/Dandelions/Member.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "5C2A0FD7-D7D7-4A94-8133-CC65B19FE7CD - 686b133a696df306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DandelionPracticeTeam.Member.loadMembers() -&gt; Swift.Array&lt;DandelionPracticeTeam.Member&gt;"
+                  moduleName = "DandelionPracticeTeam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/Dandelions/Member.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "630">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BD2BDE8-437D-46F3-B1A9-5CFE3D0CA262"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/NavigationViews/Profile/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38085039-9A29-4DB0-B1D9-F0DC1FE7474A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/NavigationViews/Profile/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFAC2D40-3A9D-4EE3-AAF4-463671C272E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loadUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AFAC2D40-3A9D-4EE3-AAF4-463671C272E2 - d91cab315551bf1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DandelionPracticeTeam.User.loadUserData() -&gt; Swift.Array&lt;DandelionPracticeTeam.User&gt;"
+                  moduleName = "DandelionPracticeTeam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "317">
+               </Location>
+               <Location
+                  uuid = "AFAC2D40-3A9D-4EE3-AAF4-463671C272E2 - d91cab315551bf1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DandelionPracticeTeam.User.loadUserData() -&gt; Swift.Array&lt;DandelionPracticeTeam.User&gt;"
+                  moduleName = "DandelionPracticeTeam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/NavigationViews/Profile/DatabaseController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

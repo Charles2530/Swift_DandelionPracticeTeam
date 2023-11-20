@@ -57,3 +57,13 @@ struct TeamInfoModalView: View {
         }
     }
 }
+
+#if DEBUG
+struct TeamInfoModalView_Previews: PreviewProvider {
+    static var previews: some View {
+        TeamInfoModalView()
+            .environmentObject(UserData())
+    }
+}
+#endif
+

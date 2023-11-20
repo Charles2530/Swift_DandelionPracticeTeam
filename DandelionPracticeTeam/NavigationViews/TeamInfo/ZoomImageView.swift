@@ -17,3 +17,11 @@ struct ZoomImageView: View {
             .navigationBarTitleDisplayMode(.inline)
     }
 }
+#if DEBUG
+struct ZoomImageView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZoomImageView(imageName: "LvLiangTeam")
+    }
+}
+#endif
+

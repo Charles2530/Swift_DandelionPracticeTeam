@@ -88,3 +88,12 @@ struct AvatarSelector: View {
         .pickerStyle(MenuPickerStyle())
     }
 }
+
+#if DEBUG
+struct ProfileEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileEditView(userData: UserData())
+    }
+}
+#endif
+

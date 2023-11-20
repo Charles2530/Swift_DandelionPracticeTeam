@@ -11,21 +11,8 @@ import SafariServices
 struct TitleTattle:View{
     @EnvironmentObject var userData: UserData
     
-    @State private var articles: [WeChatArt] = [
-            .init(title: "扬帆起航 | 蒲公英乡野航迹实践队简介", summary:
-                    "激昂青春！蒲公英乡野航迹实践队启航.", url: URL(string: "https://mp.weixin.qq.com/s/pOjhB6nxqayYnQAw3oGeQg")!
-                , likes: 0, isFavorite: false),
-            .init(title: "筑梦中阳 | Day.1 一键开启实践之旅", summary: "一键开启实践之旅.", url: URL(string: "https://mp.weixin.qq.com/s/F9zdgAxE3Hxj6EFCGpvkNA?poc_token=HJLsFmWjOAs1ywWv2PzJUz-TWh9A2J7lccWOZfIm")!
-                , likes: 0, isFavorite: false),
-            .init(title: "筑梦中阳 | Day.2 剪中阳之影，访阳坡之兴", summary: "剪中阳之影，访阳坡之兴.", url: URL(string: "https://mp.weixin.qq.com/s/Oh0-3yWtT8oabnmzYVfRiA")!
-                , likes: 0, isFavorite: false),
-            .init(title: "筑梦中阳 | Day.3 探中阳发展篇章 访民生实地调研", summary: "探中阳发展篇章 访民生实地调研.", url: URL(string: "https://mp.weixin.qq.com/s/R5znoLIcutuzwHEnlvwo7Q")!
-                , likes: 0, isFavorite: false),
-            .init(title: "筑梦中阳 | Day.4 寻觅自然风趣 品悟红色精神", summary: "寻觅自然风趣 品悟红色精神.", url: URL(string: "https://mp.weixin.qq.com/s/-fpSAKSE4y5W3nVpZE_L-g")!
-                , likes: 0, isFavorite: false),
-            .init(title: "实践总结", summary: "乡村振兴，任重而道远.", url: URL(string: "https://mp.weixin.qq.com/s/tWEW9_vceQZf4OUoVc85rQ")!
-                , likes: 0, isFavorite: false)
-        ]
+    @State private var articles: [WeChatArt] = WeChatArt.loadWeChatArts()
+
     var body: some View {
         NavigationView {
             List(articles, id: \.title) { article in
@@ -91,3 +78,13 @@ struct TitleTattle:View{
         }
     }
 }
+
+#if DEBUG
+struct TitleTattle_Previews: PreviewProvider {
+    static var previews: some View {
+        TitleTattle()
+            .environmentObject(UserData())
+    }
+}
+#endif
+

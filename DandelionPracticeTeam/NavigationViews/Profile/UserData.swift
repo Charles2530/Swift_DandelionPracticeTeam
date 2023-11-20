@@ -18,3 +18,5 @@ class UserData: ObservableObject {
     @Published var favorites: [WeChatArt] = []
     @Published var likedArticles: [String] = []
 }
+
+

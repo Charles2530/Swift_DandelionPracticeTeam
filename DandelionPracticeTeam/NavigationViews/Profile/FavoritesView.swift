@@ -44,8 +44,12 @@ struct FavoritesView: View {
     }
 }
 
+#if DEBUG
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
         FavoritesView()
+            .environmentObject(UserData())
     }
 }
+#endif
+

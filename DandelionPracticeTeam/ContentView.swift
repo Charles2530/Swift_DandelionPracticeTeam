@@ -51,6 +51,12 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView().environmentObject(UserData())
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(UserData())
+    }
 }
+#endif
+

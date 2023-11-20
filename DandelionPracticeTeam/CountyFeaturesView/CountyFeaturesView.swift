@@ -59,3 +59,12 @@ struct CountyFeaturesView:View{
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
     }
 }
+
+#if DEBUG
+struct CountyFeaturesView_Previews: PreviewProvider {
+    static var previews: some View {
+        CountyFeaturesView()
+    }
+}
+#endif
+
