@@ -3,7 +3,8 @@
 //  DandelionPracticeTeam
 //
 //  Created by Charles on 2023/9/30.
-//
+
+
 
 import SwiftUI
 
@@ -11,8 +12,9 @@ struct LoginView: View {
     @EnvironmentObject var userData: UserData
     @State private var inputUsername: String = ""
     @State private var inputPassword: String = ""
-    @State private var rightPassword: String? = nil
-    @State private var Isright: Bool = false
+    @State private var showAlert: Bool = false
+    @State private var alertTitle: String = ""
+    @State private var alertMessage: String = ""
 
     var body: some View {
         VStack {
@@ -23,62 +25,46 @@ struct LoginView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             Button("登录") {
-                Isright = false
-                if inputPassword == ""{
-                    userData.showAlert = true
-                    return
-                }
-                if let rightPassword = DataTable[inputUsername]?.password{
-                    self.rightPassword = rightPassword
-                    if rightPassword == inputPassword{
-                        userData.username = inputUsername
-                        userData.password = inputPassword
-                        userData.isLogged = true
-                        userData.showAlert = false
-                        userData.avatar = DataTable[inputUsername]?.avatar ?? "person.circle"
-                        userData.description = DataTable[inputUsername]?.description ?? "这里是个人描述"
-                        userData.favorites = DataTable[inputUsername]?.favorites ?? []
-                        userData.likedArticles = DataTable[inputUsername]?.likedArticles ?? []
-                    }
-                    else{
-                        userData.showAlert = true
-                    }
-                }else {
-                    Isright = true
-                    userData.showAlert = true
-                }
+                processLogin()
             }
             .padding()
-            .alert(isPresented: $userData.showAlert) {
-                if inputUsername == ""{
-                    Alert(title: Text("用户名为空"),
-                                 message: Text("用户名不能为空"),
-                                 dismissButton: .default(Text("确定")))
-                }else if inputPassword == ""{
-                    Alert(title: Text("密码为空"),
-                                 message: Text("请输入密码"),
-                                 dismissButton: .default(Text("确定")))
-                }else if Isright{
-                    Alert(title: Text("用户名不存在"),
-                                 message: Text("请检查用户名"),
-                                 dismissButton: .default(Text("确定")))
-                    
-                }else{
-                    Alert(title: Text("密码错误"),
-                                 message: Text("请检查密码"),
-                                 dismissButton: .default(Text("确定")))
-                }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("确定")))
             }
             NavigationLink("没有账号？注册", destination: RegisterView())
         }
     }
-}
 
-#if DEBUG
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+    private func processLogin() {
+        DispatchQueue.main.async {
+            if inputUsername.isEmpty {
+                setupAlert(title: "用户名为空", message: "用户名不能为空")
+                return
+            }
+
+            if inputPassword.isEmpty {
+                setupAlert(title: "密码为空", message: "请输入密码")
+                return
+            }
+
+            if let rightPassword = DataTable[inputUsername]?.password, rightPassword == inputPassword {
+                    userData.username = inputUsername
+                    userData.password = inputPassword
+                    userData.isLogged = true
+                    userData.showAlert = false
+                    userData.avatar = DataTable[inputUsername]?.avatar ?? "person.circle"
+                    userData.description = DataTable[inputUsername]?.description ?? "这里是个人描述"
+                    userData.favorites = DataTable[inputUsername]?.favorites ?? []
+                    userData.likedArticles = DataTable[inputUsername]?.likedArticles ?? []
+            } else {
+                setupAlert(title: "登录失败", message: "用户名或密码错误")
+            }
+        }
+    }
+
+    private func setupAlert(title: String, message: String) {
+        alertTitle = title
+        alertMessage = message
+        showAlert = true
     }
 }
-#endif
-

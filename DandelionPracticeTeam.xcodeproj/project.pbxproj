@@ -24,6 +24,7 @@
 		564F8BA62AC7FDB8004C02CE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA52AC7FDB8004C02CE /* UserData.swift */; };
 		564F8BA82AC83A75004C02CE /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA72AC83A75004C02CE /* ProfileEditView.swift */; };
 		564F8BAA2AC83F87004C02CE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F8BA92AC83F87004C02CE /* FavoritesView.swift */; };
+		565396F82B0C6EF40025687F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565396F72B0C6EF40025687F /* MapView.swift */; };
 		565FCA762ACE6DD7002D75A3 /* PhotoWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FCA752ACE6DD7002D75A3 /* PhotoWallView.swift */; };
 		565FCA782ACE6DF3002D75A3 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FCA772ACE6DF3002D75A3 /* GridView.swift */; };
 		565FCA7A2ACE6E1E002D75A3 /* ZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FCA792ACE6E1E002D75A3 /* ZoomImageView.swift */; };
@@ -58,6 +59,7 @@
 		564F8BA52AC7FDB8004C02CE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		564F8BA72AC83A75004C02CE /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		564F8BA92AC83F87004C02CE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		565396F72B0C6EF40025687F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		565FCA752ACE6DD7002D75A3 /* PhotoWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWallView.swift; sourceTree = "<group>"; };
 		565FCA772ACE6DF3002D75A3 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		565FCA792ACE6E1E002D75A3 /* ZoomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				565FCA742ACE6DAE002D75A3 /* TeamInfo */,
 				564F8BA02AC7FCE1004C02CE /* Profile */,
 				564F8B982AC7F066004C02CE /* HomeView.swift */,
+				565396F72B0C6EF40025687F /* MapView.swift */,
 				564F8B9A2AC7F09D004C02CE /* TeamInfoModalView.swift */,
 				564F8B9C2AC7F0E6004C02CE /* ProfileModalView.swift */,
 				564F8B9E2AC7F2D9004C02CE /* ImageViewer.swift */,
@@ -295,6 +298,7 @@
 				56C6B1B42AC7049C00FAA51F /* TitleTattle.swift in Sources */,
 				564F8B9D2AC7F0E6004C02CE /* ProfileModalView.swift in Sources */,
 				564F8BA22AC7FCF7004C02CE /* LoginView.swift in Sources */,
+				565396F82B0C6EF40025687F /* MapView.swift in Sources */,
 				56C6B1BA2AC7230800FAA51F /* WeChatArt.swift in Sources */,
 				56619E632AC6CA9E007FBB45 /* DandelionPracticeTeamApp.swift in Sources */,
 				564F8BAA2AC83F87004C02CE /* FavoritesView.swift in Sources */,

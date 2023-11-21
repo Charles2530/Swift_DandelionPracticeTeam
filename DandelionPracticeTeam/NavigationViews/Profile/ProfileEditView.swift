@@ -13,6 +13,7 @@ struct ProfileEditView: View {
     @State private var editingUsername: String
     @State private var editingPassword: String
     @State private var editingDescription: String
+    @State private var showSaveAlert: Bool = false
 
     
     init(userData: UserData) {
@@ -54,11 +55,16 @@ struct ProfileEditView: View {
                 userData.description = editingDescription
                 DataTable[userData.username] = User(isLogged: true, showAlert: false, username: userData.username, password: userData.password, description: userData.description, avatar: userData.avatar)
                 User.saveUsers(users: DataTable.values.map{$0})
+                showSaveAlert = true
             }
             .padding()
             .background(Color.blue)
             .foregroundColor(.white)
             .cornerRadius(10)
+            .alert("更改已保存", isPresented: $showSaveAlert) {
+                Button("OK", role: .cancel) { }
+            }
+    
 
             Spacer()
         }

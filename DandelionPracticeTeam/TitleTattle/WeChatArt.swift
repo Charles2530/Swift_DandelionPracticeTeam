@@ -71,4 +71,19 @@ class WeChatArt: ObservableObject, Identifiable, Equatable, Hashable, Decodable,
             return []
         }
     }
+    
+    static func saveWeChatArts(weChatArts:[WeChatArt]){
+        let encoder=JSONEncoder()
+        if let encoded = try? encoder.encode(weChatArts) {
+            if let jsonString = String(data: encoded, encoding: .utf8) {
+                let fileURL = URL(fileURLWithPath: "/Users/charles/Documents/coding_file/swift/DandelionPracticeTeam/DandelionPracticeTeam/TitleTattle/WechatArts.json")
+                do {
+                    try jsonString.write(to: fileURL, atomically: true, encoding: .utf8)
+                    print("Data saved to \(fileURL)")
+                } catch {
+                    print("Error saving data to file: \(error)")
+                }
+            }
+        }
+    }
 }

@@ -12,6 +12,9 @@ struct RegisterView: View {
     @State private var inputUsername: String = ""
     @State private var inputPassword: String = ""
     @State private var inputDescription: String = ""
+    @State private var showAlert: Bool = false
+    @State private var alertTitle: String = ""
+    @State private var alertMessage: String = ""
 
     var body: some View {
         VStack {
@@ -25,47 +28,41 @@ struct RegisterView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             Button("注册") {
-                if inputUsername == "" || inputPassword == "" || inputDescription == ""{
-                    userData.showAlert = true
-                    return
-                }
-                if DataTable[inputUsername] != nil{
-                    userData.showAlert = true
-                    return
-                }
-                userData.username = inputUsername
-                userData.password = inputPassword
-                userData.description = inputDescription
-                userData.isLogged = true
-                userData.showAlert = false
-                DataTable[inputUsername] = User(isLogged: true, showAlert: false, username: inputUsername, password: inputPassword, description: inputDescription)
-                User.saveUsers(users: DataTable.values.map{$0})
-            }
-            .alert(isPresented: $userData.showAlert) {
-                if inputUsername == "" || inputPassword == "" || inputDescription == ""{
-                    Alert(title: Text("密码为空"),
-                                 message: Text("注册信息不能为空"),
-                                 dismissButton: .default(Text("确定")))
-                } else if DataTable[inputUsername] != nil {
-                    Alert(title: Text("用户名已存在"),
-                                 message: Text("请更换用户名"),
-                                 dismissButton: .default(Text("确定")))
-                }else {
-                    Alert(title: Text("系统异常"),
-                                 message: Text("请稍后再试"),
-                                 dismissButton: .default(Text("确定")))
-                }
+                processRegistration()
             }
             .padding()
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("确定")))
+            }
         }
     }
-}
 
-#if DEBUG
-struct RegisterView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegisterView()
+    private func processRegistration() {
+        DispatchQueue.main.async {
+            if inputUsername.isEmpty || inputPassword.isEmpty || inputDescription.isEmpty {
+                setupAlert(title: "注册信息不完整", message: "所有字段均为必填项")
+                return
+            }
+
+            if DataTable[inputUsername] != nil {
+                setupAlert(title: "用户名已存在", message: "请更换用户名")
+                return
+            }
+
+            // 注册成功的逻辑
+            userData.username = inputUsername
+            userData.password = inputPassword
+            userData.description = inputDescription
+            userData.isLogged = true
+            userData.showAlert = false
+            DataTable[inputUsername] = User(isLogged: true, showAlert: false, username: inputUsername, password: inputPassword, description: inputDescription)
+            User.saveUsers(users: DataTable.values.map{$0})
+        }
+    }
+
+    private func setupAlert(title: String, message: String) {
+        alertTitle = title
+        alertMessage = message
+        showAlert = true
     }
 }
-#endif
-

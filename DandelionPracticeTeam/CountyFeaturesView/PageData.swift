@@ -30,9 +30,11 @@ struct PageViewContentView:View{
                     .padding()
                     .italic()
                     .shadow(color: .black, radius: 1, x: 0, y: 2)
-                ForEach(page.sectionData) { section in
-                    SectionDataView(section: section)
-                }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                HStack{
+                    ForEach(page.sectionData) { section in
+                        SectionDataView(section: section)
+                    }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                }
             }
         }
     }

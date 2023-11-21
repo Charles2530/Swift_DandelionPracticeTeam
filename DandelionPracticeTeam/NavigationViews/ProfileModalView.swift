@@ -45,6 +45,7 @@ struct ProfileModalView: View {
     
     private func logout(){
         DataTable[userData.username] = User(
+            username:userData.username,
             password: userData.password,
             description: userData.description,
             avatar: userData.avatar,

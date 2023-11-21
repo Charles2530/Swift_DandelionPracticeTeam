@@ -77,6 +77,7 @@ struct TitleTattle:View{
                 userData.likedArticles.remove(at: index)
             }
         }
+        WeChatArt.saveWeChatArts(weChatArts: articles)
         DataTable[userData.username] = User(isLogged: true, showAlert: false, username: userData.username, password: userData.password, description: userData.description, favorites: userData.favorites, likedArticles: userData.likedArticles)
         User.saveUsers(users: DataTable.values.map{$0})
     }

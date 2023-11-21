@@ -20,6 +20,10 @@ struct ContentView: View {
             TeamInfoModalView().tabItem {
                 Label("实践队简介", systemImage: "info.circle").background(Color.black.opacity(0.8)).cornerRadius(8)
             }
+            
+            MapView().tabItem {
+                Label("中阳县地图", systemImage: "map").background(Color.black.opacity(0.8)).cornerRadius(8)
+            }
 
             Button(action: {
                 showImageModal.toggle()
